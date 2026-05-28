@@ -4,48 +4,48 @@ A React JS application that calculates customer reward points from transactions 
 
 ## Features
 
-* Reward point calculation logic
-* Monthly rewards aggregation
-* Total rewards aggregation
-* Transactions table
-* Search and filtering
-* Loading, error, and empty states
-* Reusable table components
-* Pure utility functions
-* Jest test coverage
-* Tailwind CSS + shadcn/ui
+- Reward point calculation logic
+- Monthly rewards aggregation
+- Total rewards aggregation
+- Transactions table
+- Search and filtering
+- Loading, error, and empty states
+- Reusable table components
+- Pure utility functions
+- Jest test coverage
+- Tailwind CSS + shadcn/ui
 
 ---
 
 ## Reward Rules
 
-* 2 points for every dollar spent over $100
-* 1 point for every dollar spent between $50 and $100
+- 2 points for every dollar spent over $100
+- 1 point for every dollar spent between $50 and $100
 
 ### Example
 
-* Purchase: `$120`
-* Reward:
+- Purchase: `$120`
+- Reward:
+  - `2 x 20 = 40`
+  - `1 x 50 = 50`
 
-  * `2 x 20 = 40`
-  * `1 x 50 = 50`
-* Total = `90 points`
+- Total = `90 points`
 
 ### Decimal Handling
 
-* `100.2 -> 50 points`
-* `100.4 -> 50 points`
+- `100.2 -> 50 points`
+- `100.4 -> 50 points`
 
 ---
 
 ## Tech Stack
 
-* React JS
-* Vite
-* Tailwind CSS
-* shadcn/ui
-* Jest
-* React Testing Library
+- React JS
+- Vite
+- Tailwind CSS
+- shadcn/ui
+- Jest
+- React Testing Library
 
 ---
 
@@ -80,6 +80,12 @@ npm test
 
 ---
 
+## Run Tests with Coverage
+
+```bash
+npm test -- --coverage
+```
+
 ## Build Project
 
 ```bash
@@ -106,26 +112,28 @@ npm run build
 
 ## Test Coverage
 
+![Test Coverage](./public/testcoverage1.png)
+
 The project includes unit tests for:
 
-* reward calculation logic
-* monthly aggregation
-* total aggregation
-* transaction enrichment
-* sorting logic
-* dashboard loading state
-* dashboard error state
-* dashboard empty state
-* successful dashboard rendering
+- reward calculation logic
+- monthly aggregation
+- total aggregation
+- transaction enrichment
+- sorting logic
+- dashboard loading state
+- dashboard error state
+- dashboard empty state
+- successful dashboard rendering
 
 ---
 
 ## Notes
 
-* No Redux used
-* No TypeScript used
-* Mock async API implemented
-* Sorting handled through utility functions
-* Data grouped by month and year
-* Reusable table components used
-* Pure functions used throughout the application
+- No Redux used
+- No TypeScript used
+- Mock async API implemented
+- Sorting handled through utility functions
+- Data grouped by month and year
+- Reusable table components used
+- Pure functions used throughout the application
