@@ -1,16 +1,131 @@
-# React + Vite
+# Customer Rewards Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React JS application that calculates customer reward points from transactions over a three-month period.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* Reward point calculation logic
+* Monthly rewards aggregation
+* Total rewards aggregation
+* Transactions table
+* Search and filtering
+* Loading, error, and empty states
+* Reusable table components
+* Pure utility functions
+* Jest test coverage
+* Tailwind CSS + shadcn/ui
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Reward Rules
 
-## Expanding the ESLint configuration
+* 2 points for every dollar spent over $100
+* 1 point for every dollar spent between $50 and $100
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Example
+
+* Purchase: `$120`
+* Reward:
+
+  * `2 x 20 = 40`
+  * `1 x 50 = 50`
+* Total = `90 points`
+
+### Decimal Handling
+
+* `100.2 -> 50 points`
+* `100.4 -> 50 points`
+
+---
+
+## Tech Stack
+
+* React JS
+* Vite
+* Tailwind CSS
+* shadcn/ui
+* Jest
+* React Testing Library
+
+---
+
+## Project Structure
+
+```bash
+src/
+  components/
+    ui/
+  data/
+  services/
+  lib/
+  __tests__/
+```
+
+---
+
+## Run Project
+
+```bash
+npm install
+npm run dev
+```
+
+---
+
+## Run Tests
+
+```bash
+npm test
+```
+
+---
+
+## Build Project
+
+```bash
+npm run build
+```
+
+---
+
+## Screenshots
+
+### Dashboard
+
+![Dashboard 1](/dashboard1.png)
+
+### Dashboard with Filters
+
+![Dashboard 2](/dashboard2.png)
+
+### Test Cases
+
+![Test Cases](/testcasestatus.png)
+
+---
+
+## Test Coverage
+
+The project includes unit tests for:
+
+* reward calculation logic
+* monthly aggregation
+* total aggregation
+* transaction enrichment
+* sorting logic
+* dashboard loading state
+* dashboard error state
+* dashboard empty state
+* successful dashboard rendering
+
+---
+
+## Notes
+
+* No Redux used
+* No TypeScript used
+* Mock async API implemented
+* Sorting handled through utility functions
+* Data grouped by month and year
+* Reusable table components used
+* Pure functions used throughout the application
