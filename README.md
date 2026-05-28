@@ -92,15 +92,15 @@ npm run build
 
 ### Dashboard
 
-![Dashboard 1](/dashboard1.png)
+![Dashboard 1](./public/dashboard1.png)
 
 ### Dashboard with Filters
 
-![Dashboard 2](/dashboard2.png)
+![Dashboard 2](./public/dashboard2.png)
 
 ### Test Cases
 
-![Test Cases](/testcasestatus.png)
+![Test Cases](./public/testcasestatus.png)
 
 ---
 
